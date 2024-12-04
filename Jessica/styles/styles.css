@@ -1,8 +1,10 @@
+
 body{
     color: black;
     text-transform: uppercase;
     font-family: "Roboto Light", sans-serif;
     margin: 0;
+
 }
 
 header{
@@ -81,12 +83,17 @@ button{
     border: 1px solid black;
     border-left: none;
     border-right: none;
+   overflow: hidden;
+    position: relative;
 }
 
 .motion-line__element{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 29px;
+
+
 }
 .img
 {
@@ -312,6 +319,11 @@ button{
     border-top: none;
     border-left: none;
 }
+.woman-photo .img
+{
+    width: 100%;
+    object-fit: contain;
+}
 
 .history-right
 {
@@ -452,5 +464,7 @@ button{
 .scaleX {
     transform: scale(-1, 1);
 }
+
+
 
 
