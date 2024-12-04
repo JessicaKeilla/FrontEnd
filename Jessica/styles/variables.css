@@ -1,0 +1,11 @@
+:root {
+    --primary-background-color: #FB4B4D;
+    --nav-text-color: #222222;
+    --header-text-size: 14px;
+    --footer-text-size: 15px;
+    --running-line-text-size: 17px;
+    --default-padding: 20px;
+    --footer-color: #CDFD3B;
+    --fontFamily: "Roboto", sans-serif;
+    --default-border: 1px solid black;
+}
