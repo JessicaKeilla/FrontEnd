@@ -1,0 +1,17 @@
+:root {
+    --primary-background-color: #FB4B4D;
+    --nav-text-color: black;
+    --header-text-size: 14px;
+    --footer-text-size: 15px;
+    --running-line-text-size: 17px;
+    --default-padding: 20px;
+    --footer-color: #CDFD3B;
+    --fontFamily: "Roboto", sans-serif;
+    --default-border: 1px solid black;
+}
+[data-theme='dark']
+{
+    --primary-background-color: #000000;
+    --nav-text-color: #ffffff;
+    --footer-color: #333333;
+}
