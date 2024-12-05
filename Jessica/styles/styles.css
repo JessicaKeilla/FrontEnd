@@ -1,15 +1,17 @@
-
 body{
-    color: black;
+    color: var(--nav-text-color);
     text-transform: uppercase;
     font-family: "Roboto Light", sans-serif;
     margin: 0;
-
+    background-color: var(--primary-background-color);
+    transition: var(--primary-background-color 0.3s), color 0.3s;
+    font-size: 1rem;
 }
 
+
 header{
-    padding: 21px;
-    border: 1px solid black;
+    padding: 2vw;
+    border: 1px solid black ;
     border-top: none;
     margin: 0 21px;
 }
@@ -26,14 +28,14 @@ ul{
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--nav-text-color);
 }
 
 button{
     border: none;
     background-color: #FB4B4D;
-    padding: 15px 44px;
-    font-size: 14px;
+    padding:  1rem 2rem;
+    font-size: 1rem; /*responsive font size*/
     color: white;
     text-transform: uppercase;
 }
@@ -51,11 +53,12 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2vw;
 }
 .container {
    /* display: grid;*/
-    grid-template-columns: repeat(3,1fr);
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2vw; /* responsive gap*/
 
 }
 .banner-bordered{
@@ -464,6 +467,97 @@ button{
 .scaleX {
     transform: scale(-1, 1);
 }
+
+
+/* Media Queries */
+@media (max-width : 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .banner-bordered .slogan-with-scorpions {
+        flex-direction: column;
+    }
+
+    .banner-bordered__left-side,
+    .banner-bordered__right-side {
+        width: 100%;
+    }
+
+
+
+    .product-card {
+        width: 100%;
+    }
+    .footer {
+        padding: 15px; /* Adjust footer padding */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+
+    .header {
+        padding: 5vw;
+    }
+
+    .button {
+        width: 100%;
+        padding: 2vw;
+    }
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .container {
+        padding: 1rem; /* Adjust padding for mobile */
+    }
+
+    .banner-bordered__right-side-slogan {
+        font-size: 1.5rem; /* Adjust font size for slogans */
+    }
+
+    #theme-toggle {
+        margin-top: 10px; /* Add margin for spacing */
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    html {
+        font-size: calc(1vw/3.2);
+    }
+}
+@media screen and (min-width: 2560px) {
+    html  {font-size: calc(1vw / 3.2)}
+}
+
+/*ANIMATION*/
+.running-line-element
+{
+    white-space: nowrap;
+    display: flex;
+    animation: move 80s linear infinite;
+}
+
+.motion-line__element {
+    white-space: nowrap;
+    display: flex;
+    animation: move 10s linear infinite;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 
 
