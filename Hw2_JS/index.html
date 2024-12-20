@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 5px 10px;
+        }
+
+        button {
+            margin-right: 5px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Добавить запись</h1>
+<form id="dataForm" action="#" onsubmit="return false;">
+    <label for="fullName">ФИО:</label>
+    <input type="text" id="fullName">
+    <span class="error" id="nameError"></span><br><br>
+
+    <label for="group">Группа:</label>
+    <input type="text" id="group">
+    <span class="error" id="groupError"></span><br><br>
+
+    <button type="submit">Добавить</button>
+</form>
+
+<h2>Таблица записей</h2>
+<table id="dataTable">
+    <thead>
+    <tr>
+        <th>ФИО</th>
+        <th>Группа</th>
+        <th>Удалить</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<button id="deleteAll">Удалить все записи</button>
+
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
