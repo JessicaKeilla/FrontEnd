@@ -1,4 +1,4 @@
-import {IsTypeEqual, IsTypeAssignable, Not, typeAssert} from 'type-assertions';
+import {IsTypeEqual, IsTypeAssignable, typeAssert} from 'type-assertions';
 import {
     ApiResponse,
     requestAdmins,
